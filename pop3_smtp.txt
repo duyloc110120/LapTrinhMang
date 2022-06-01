@@ -1,0 +1,24 @@
+POP 3 
+hàm cmdlogin_Click:
+Tạo luồng và gán hàm loginandretr cho luồng hoạt động
+Cho luồng chạy nền và lấy thông tin server và user name từ textbox
+
+hàm loginandretr:
+Tạo socket tcpclient ở port 110
+tạo đường truyền Network Stream từ tcpclient
+ghi lên đường truyền tên username và đọc dữ liệu
+ghi lên đường truyền password và đọc dữ liệu
+ghi lên đường truyền stat và đọc dữ liệu
+lấy được số thư mail và in ra label
+ghi lên đường truyền câu lệnh top để đọc được header của mỗi thư
+mở vòng lặp , đọc dữ liệu nếu dữ liệu tương ứng với các điều kiện thì gán cho từng bộ phận trong thư giá trị
+tạo chuỗi mảng và thêm vào listview
+
+
+SMTP
+Xuất hiện khi bấm nút send bên form1
+hàm cmdsend_Click:
+-dùng mailattachment để đính kèm tệp trong lúc gửi mail
+-khởi tạo đối tượng MailMessage và gán từng thuộc tính của nó theo những giấ trị nhập trong textbox
+-Gửi mail bằng hàm send của đốitượng smtpmail
+-để các textbox về trống

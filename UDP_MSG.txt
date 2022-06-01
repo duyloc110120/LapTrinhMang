@@ -1,0 +1,19 @@
+SrvUDPMSG
+hàm btnStart_Click:
+-xoá hết nội dụng listbox
+-tạo luồng mới gán cho hàm ListenMessage và bắt đầu luồng
+hàm ListenMessage:
+-Khởi tạo UdpClient lắng nghe tại cổng chỉ định
+-Nhận message bên client và in ra các thông điệp trên listbox
+hàm ShowIP:
+-chuyển các IP đã nhập thành địa chỉ 0.0.0.0 trên textbox
+hàm Process: 
+-xử lý khoảng trắng 2 bên cho message
+
+ ClientUDPMSG
+nhập địa chỉ server và port 
+nhập message và bấm send
+hàm Send:
+khởi tạo Udpclient để kết nối tới server qua thông tin nhập trên text box
+gửi đi dữ liệu đã nhập trên textbox và nhận lại dữ liệu đó từ server
+in ra trên listbox
